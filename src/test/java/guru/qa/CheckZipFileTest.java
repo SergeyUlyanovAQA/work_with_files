@@ -21,7 +21,7 @@ public class CheckZipFileTest {
             }
         }
         String textExample = "Александр Пушкин — Зимнее утро";
-        textExample = new String(textExample.getBytes("windows-1251"), "utf-8");
+        textExample = new String(textExample.getBytes("windows-1251"), StandardCharsets.UTF_8);
         Assertions.assertTrue(entryAsString.contains(textExample));
     }
 }
